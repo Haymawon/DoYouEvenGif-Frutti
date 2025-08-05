@@ -175,71 +175,71 @@
         }
 
         .section-title {
-    font-size: 3.5rem;
-    margin-bottom: 40px;
-    text-align: center;
-    background: linear-gradient(45deg, 
-        #FFD1DC 0%,   /* baby pink */
-        #FFB6C1 20%,  /* light pink */
-        #FFC3A0 40%,  /* peach */
-        #FFDAC1 60%,  /* creamy peach */
-        #E2F0CB 80%,  /* mint green */
-        #B5EAD7 100%  /* soft aqua */
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 2px 8px rgba(255, 182, 193, 0.4);
-    position: relative;
-    display: inline-block;
-    padding: 0 25px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    animation: gentleFlow 8s ease infinite;
-    background-size: 200% 200%;
-}
+            font-size: 3.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            background: linear-gradient(45deg, 
+                #FFD1DC 0%,   /* baby pink */
+                #FFB6C1 20%,  /* light pink */
+                #FFC3A0 40%,  /* peach */
+                #FFDAC1 60%,  /* creamy peach */
+                #E2F0CB 80%,  /* mint green */
+                #B5EAD7 100%  /* soft aqua */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 8px rgba(255, 182, 193, 0.4);
+            position: relative;
+            display: inline-block;
+            padding: 0 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            animation: gentleFlow 8s ease infinite;
+            background-size: 200% 200%;
+        }
 
-.section-title:before, 
-.section-title:after {
-    content: "✦";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #FFB6C1;
-    font-size: 1.5rem;
-    text-shadow: 0 0 12px rgba(255, 214, 220, 0.8);
-    animation: twinkle 2s ease-in-out infinite alternate;
-}
+        .section-title:before, 
+        .section-title:after {
+            content: "✦";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #FFB6C1;
+            font-size: 1.5rem;
+            text-shadow: 0 0 12px rgba(255, 214, 220, 0.8);
+            animation: twinkle 2s ease-in-out infinite alternate;
+        }
 
-.section-title:before { left: -5px; }
-.section-title:after { right: -5px; }
+        .section-title:before { left: -5px; }
+        .section-title:after { right: -5px; }
 
-.section-title .underline {
-    position: absolute;
-    bottom: -12px;
-    left: 15%;
-    width: 70%;
-    height: 3px;
-    background: linear-gradient(90deg, 
-        transparent, 
-        rgba(255, 214, 220, 0.9), 
-        rgba(230, 230, 250, 0.9), 
-        transparent
-    );
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 214, 220, 0.6);
-}
+        .section-title .underline {
+            position: absolute;
+            bottom: -12px;
+            left: 15%;
+            width: 70%;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 214, 220, 0.9), 
+                rgba(230, 230, 250, 0.9), 
+                transparent
+            );
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 214, 220, 0.6);
+        }
 
-@keyframes gentleFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        @keyframes gentleFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-@keyframes twinkle {
-    0% { opacity: 0.6; transform: translateY(-50%) scale(0.9); }
-    100% { opacity: 1; transform: translateY(-50%) scale(1.1); }
-}
+        @keyframes twinkle {
+            0% { opacity: 0.6; transform: translateY(-50%) scale(0.9); }
+            100% { opacity: 1; transform: translateY(-50%) scale(1.1); }
+        }
 
         /* ==== HOME BASE STYLES ==== */
         .home-content {
@@ -342,11 +342,11 @@
         }
 
         .gif-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
 
         .gif-item {
             border-radius: 20px;
@@ -578,8 +578,8 @@
             transform: scale(1.1);
         }
 
-        /* ==== MAGIC PORTALS STYLES ==== */
-        .portals-section {
+        /* ==== DREAMY DESTINATIONS STYLES ==== */
+        .destinations-section {
             background: rgba(255, 255, 255, 0.6);
             border-radius: 25px;
             padding: 30px;
@@ -587,31 +587,45 @@
             border: 3px solid var(--secondary);
         }
 
-        .portals-container {
+        .destinations-header {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .destinations-header p {
+            font-size: 1.3rem;
+            color: #5a2d8a;
+            line-height: 1.7;
+        }
+
+        .destinations-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 35px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
-        .portal-card {
+        .destination-card {
             background: rgba(255, 255, 255, 0.8);
             border-radius: 25px;
-            padding: 30px;
+            padding: 25px;
             transition: var(--transition);
             position: relative;
             overflow: hidden;
             border: 3px solid var(--primary);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
         }
 
-        .portal-card:hover {
+        .destination-card:hover {
             transform: translateY(-15px) rotate(2deg);
             border: 3px solid var(--accent);
             box-shadow: 0 25px 50px rgba(255, 235, 59, 0.4);
         }
 
-        .portal-card:before {
+        .destination-card:before {
             content: "";
             position: absolute;
             top: 0;
@@ -622,20 +636,58 @@
             box-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
         }
 
-        .portal-title {
-            font-size: 1.8rem;
+        .destination-image {
+            width: 100%;
+            height: 220px;
+            border-radius: 15px;
             margin-bottom: 20px;
-            color: var(--primary);
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
         }
 
-        .portal-description {
+        .destination-card:hover .destination-image {
+            transform: scale(1.05);
+        }
+
+        .destination-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .destination-description {
             margin-bottom: 25px;
             color: #5a2d8a;
             font-size: 1.1rem;
             line-height: 1.7;
+            height: 80px;
+            overflow: hidden;
         }
 
-        .portal-link {
+        .destination-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px dashed var(--primary);
+        }
+
+        .destination-info {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #5a2d8a;
+        }
+
+        .destination-info i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+
+        .destination-link {
             display: inline-block;
             padding: 12px 25px;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
@@ -646,21 +698,142 @@
             transition: var(--transition);
             font-size: 1.2rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            text-align: center;
         }
 
-        .portal-link:hover {
-            transform: scale(1.1);
+        .destination-link:hover {
+            transform: scale(1.05);
             box-shadow: 0 0 20px rgba(255, 107, 255, 0.6);
         }
 
-        .portal-gif {
+        .destination-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 180px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .destination-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 30px;
+            max-width: 800px;
+            width: 90%;
+            padding: 40px;
+            position: relative;
+            transform: scale(0.8);
+            transition: transform 0.4s ease;
+            box-shadow: 0 0 50px rgba(255, 107, 255, 0.6);
+            border: 5px solid var(--accent);
+        }
+
+        .destination-modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2rem;
+            color: var(--primary);
+            cursor: pointer;
+            transition: var(--transition);
+            background: none;
+            border: none;
+        }
+
+        .close-modal:hover {
+            transform: rotate(90deg);
+            color: var(--secondary);
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 350px;
+            border-radius: 20px;
             object-fit: cover;
+            margin-bottom: 25px;
+            border: 3px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .modal-description {
+            font-size: 1.2rem;
+            color: #5a2d8a;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .modal-info {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(255, 107, 255, 0.1);
+            padding: 20px;
             border-radius: 15px;
-            margin-bottom: 20px;
-            border: 3px solid var(--accent);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--primary);
+        }
+
+        .info-box h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .info-box p {
+            color: #5a2d8a;
+            font-size: 1.1rem;
+        }
+
+        .modal-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: var(--transition);
+            font-size: 1.3rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .modal-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 107, 255, 0.7);
         }
 
         /* ==== WHO DIS? STYLES ==== */
@@ -812,7 +985,7 @@
                 flex-direction: column;
             }
 
-            .portals-container, .gallery {
+            .destinations-container, .gallery {
                 grid-template-columns: 1fr;
             }
 
@@ -860,6 +1033,11 @@
                 width: 60px;
                 height: 60px;
                 font-size: 1.8rem;
+            }
+
+            .modal-info {
+                flex-direction: column;
+                gap: 15px;
             }
         }
 
@@ -915,18 +1093,28 @@
 ::-webkit-scrollbar-thumb:active {
     animation: scrollBounce 0.5s ease;
 }
+
+.logo-gif {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(255, 107, 255, 0.5);
+    transition: transform 0.3s ease;
+}
     </style>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <div class="sidebar">
+        <img class="logo-gif" src="/assets/img/kitty - Discord Emoji.gif" alt="">
         <div class="logo">DoYouEvenGif</div>
         <ul class="nav-links">
             <li><a href="#homebase" class="nav-link active" data-section="homebase"><i class="fas fa-home"></i> <span>Homebase</span></a></li>
             <li><a href="#loopies" class="nav-link" data-section="loopies"><i class="fas fa-film"></i> <span>Loopies</span></a></li>
             <li><a href="#meowodies" class="nav-link" data-section="meowodies"><i class="fas fa-music"></i> <span>Meowodies</span></a></li>
             <li><a href="#peek-a-pics" class="nav-link" data-section="peek-a-pics"><i class="fas fa-image"></i> <span>Peek a Pics</span></a></li>
-            <li><a href="#magic-portals" class="nav-link" data-section="magic-portals"><i class="fas fa-magic"></i> <span>Magic Portals</span></a></li>
+            <li><a href="#dreamy-destinations" class="nav-link" data-section="dreamy-destinations"><i class="fas fa-globe-americas"></i> <span>Dreamy Destinations</span></a></li>
             <li><a href="#who-dis" class="nav-link" data-section="who-dis"><i class="fas fa-question-circle"></i> <span>Who Dis?</span></a></li>
         </ul>
     </div>
@@ -944,8 +1132,9 @@
                     <div class="featured-item">
                         <img src="https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif" alt="Featured GIF">
                     </div>
-                   
-                    
+                    <div class="featured-item">
+                        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Featured Image">
+                    </div>
                 </div>
                 
                 <p>Navigate using the sidebar to explore all the magical sections. Everything is designed to be extra cute, extra smooth, and extra premium!</p>
@@ -1007,15 +1196,32 @@
             </div>
         </section>
 
-        <!-- Magic Portals Section -->
-        <section id="magic-portals" class="section">
-            <h2 class="section-title">Magic Portals</h2>
-            <div class="portals-section">
-                <div class="portals-container" id="portals-container">
-                    <!-- Portals will be loaded from JSON -->
+        <!-- Dreamy Destinations Section -->
+        <section id="dreamy-destinations" class="section">
+            <h2 class="section-title">Dreamy Destinations</h2>
+            <div class="destinations-section">
+                <div class="destinations-header">
+                    <p>✨ Step into a world of enchantment with our curated collection of dreamy destinations. Each location is a magical escape waiting to transport you to a world of wonder and beauty. Click on any destination to explore its secrets! ✨</p>
+                </div>
+                <div class="destinations-container" id="destinations-container">
+                    <!-- Destinations will be loaded here -->
                 </div>
             </div>
         </section>
+
+        <!-- Destination Modal -->
+        <div class="destination-modal" id="destination-modal">
+            <div class="modal-content" id="modal-content">
+                <button class="close-modal" id="close-modal"><i class="fas fa-times"></i></button>
+                <img src="" alt="" class="modal-image" id="modal-image">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-description" id="modal-description"></p>
+                <div class="modal-info" id="modal-info">
+                    <!-- Info boxes will be loaded here -->
+                </div>
+                <a href="#" class="modal-link" id="modal-link" target="_blank">Explore Destination</a>
+            </div>
+        </div>
 
         <!-- Who Dis? Section -->
         <section id="who-dis" class="section">
@@ -1059,9 +1265,9 @@
                 file: "sounds/love-me-not.mp3"
             },
             {
-                title: "Frutti's Favorite Tune",
-                duration: "4:20",
-                file: "sounds/frutti-favorite.mp3"
+                title: "Aoi Teshima - Mori No Chiisana Restaurant",
+                duration: "2:34",
+                file: "sounds/mori-no-chiisana-restaurant.mp3"
             },
             {
                 title: "Dreamy Beats Mix",
@@ -1089,36 +1295,72 @@
             { src: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", alt: "Cute cat" }
         ];
 
-        const portalsData = [
+        const destinationsData = [
             {
-                title: "Design Inspiration",
-                description: "A collection of beautiful designs to spark your creativity and imagination.",
-                url: "#",
-                gif: "https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif"
+                id: 1,
+                title: "Enchanted Forest Glade",
+                description: "A magical forest clearing filled with glowing mushrooms, sparkling fireflies, and ancient trees that whisper secrets of the woodland realm. The air is filled with the sweet scent of magical blossoms.",
+                image: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                location: "Mystic Woods, Fantasy Realm",
+                bestTime: "Spring Equinox",
+                magicLevel: "★★★★★",
+                price: "Free (requires magical permit)",
+                url: "#"
             },
             {
-                title: "Cute Animal Videos",
-                description: "Hours of adorable animals doing funny and heartwarming things.",
-                url: "#",
-                gif: "https://media.giphy.com/media/l0HlG8vJXW0g5Q6O4/giphy.gif"
+                id: 2,
+                title: "Crystal Lagoon Cove",
+                description: "A secluded lagoon with water so clear you can see the rainbow crystals at the bottom. The water glows with magical energy and is home to friendly water sprites who love to play.",
+                image: "https://images.unsplash.com/photo-1439405326854-014607f694d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                location: "Azure Isles, Dream Sea",
+                bestTime: "Summer Solstice",
+                magicLevel: "★★★★☆",
+                price: "10 Pixie Dust Coins",
+                url: "#"
             },
             {
-                title: "Animated Art Gallery",
-                description: "Digital art that comes to life with mesmerizing animations.",
-                url: "#",
-                gif: "https://media.giphy.com/media/3o7TKsQ8UQ4l4LhGz6/giphy.gif"
+                id: 3,
+                title: "Starlight Mountain Peak",
+                description: "The highest peak in the Celestial Range where the stars seem close enough to touch. At night, the mountain glows with stardust, and constellations dance across the sky.",
+                image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                location: "Celestial Mountains, Sky Kingdom",
+                bestTime: "Winter Nights",
+                magicLevel: "★★★★★",
+                price: "15 Star Fragments",
+                url: "#"
             },
             {
-                title: "Creative Coding",
-                description: "Interactive art and creative coding projects that will blow your mind.",
-                url: "#",
-                gif: "https://media.giphy.com/media/3o7abAHdYvZdBNnGZq/giphy.gif"
+                id: 4,
+                title: "Rainbow Waterfall Valley",
+                description: "A valley where waterfalls cascade in every color of the rainbow. The mist creates beautiful light refractions and magical creatures can be seen playing in the pools below.",
+                image: "https://images.unsplash.com/photo-1542662565-7e4b66bae529?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                location: "Prism Canyon, Color Realm",
+                bestTime: "After Rainfall",
+                magicLevel: "★★★☆☆",
+                price: "Free",
+                url: "#"
             },
             {
-                title: "Fantasy Worlds",
-                description: "Explore magical realms and fantasy landscapes created by talented artists.",
-                url: "#",
-                gif: "https://media.giphy.com/media/3o7TKwxYkeW0ZvTqsU/giphy.gif"
+                id: 5,
+                title: "Moonflower Garden",
+                description: "A mystical garden that blooms only under moonlight. The glowing moonflowers release soothing scents and magical pollen that creates beautiful dreamscapes.",
+                image: "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                location: "Lunar Plains, Night Realm",
+                bestTime: "Full Moon Nights",
+                magicLevel: "★★★★☆",
+                price: "5 Moon Petals",
+                url: "#"
+            },
+            {
+                id: 6,
+                title: "Cloud Castle Retreat",
+                description: "A floating castle made of clouds and starlight, accessible only by winged creatures or magical airships. The view of the world below is absolutely breathtaking.",
+                image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                location: "Sky Kingdom, Above the Clouds",
+                bestTime: "Golden Hour",
+                magicLevel: "★★★★★",
+                price: "20 Cloud Crystals",
+                url: "#"
             }
         ];
 
@@ -1262,6 +1504,7 @@
         const durationEl = document.getElementById('duration');
         const songTitleEl = document.getElementById('song-title');
         const playlistEl = document.getElementById('music-playlist');
+        const audioPlayer = document.getElementById('audio-player');
         
         let isPlaying = false;
         let currentSong = 0;
@@ -1309,28 +1552,14 @@
             isPlaying = true;
             playBtn.innerHTML = '<i class="fas fa-pause"></i>';
             songTitleEl.textContent = musicData[currentSong].title;
-            
-            // Simulate progress
-            let progress = 0;
-            const totalTime = 225; // 3:45 in seconds
-            clearInterval(progressInterval);
-            
-            progressInterval = setInterval(() => {
-                if (progress >= 100) {
-                    clearInterval(progressInterval);
-                    nextSong();
-                    return;
-                }
-                progress += 100 / (totalTime * 2); // Adjust for demo
-                progressBar.style.width = `${progress}%`;
-                currentTimeEl.textContent = formatTime((progress * totalTime) / 100);
-            }, 500);
+            audioPlayer.src = musicData[currentSong].file;
+            audioPlayer.play();
         }
         
         function pauseSong() {
             isPlaying = false;
             playBtn.innerHTML = '<i class="fas fa-play"></i>';
-            clearInterval(progressInterval);
+            audioPlayer.pause();
         }
         
         // Next/previous song
@@ -1383,6 +1612,19 @@
             return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
         }
         
+        // Audio player events
+        audioPlayer.addEventListener('timeupdate', () => {
+            const currentTime = audioPlayer.currentTime;
+            const duration = audioPlayer.duration;
+            const progress = (currentTime / duration) * 100;
+            progressBar.style.width = `${progress}%`;
+            currentTimeEl.textContent = formatTime(currentTime);
+        });
+
+        audioPlayer.addEventListener('ended', () => {
+            nextSong();
+        });
+
         // ===== PEEK-A-PICS GALLERY =====
         function loadGallery() {
             const gallery = document.getElementById('gallery-container');
@@ -1396,62 +1638,100 @@
             });
         }
         
-        // ===== MAGIC PORTALS =====
-        function loadPortals() {
-            const portals = document.getElementById('portals-container');
-            portals.innerHTML = '';
+        // ===== DREAMY DESTINATIONS =====
+        function loadDestinations() {
+            const destinations = document.getElementById('destinations-container');
+            destinations.innerHTML = '';
             
-            portalsData.forEach(portal => {
-                const portalCard = document.createElement('div');
-                portalCard.className = 'portal-card';
-                portalCard.innerHTML = `
-                    <img src="${portal.gif}" class="portal-gif" alt="${portal.title}">
-                    <h3 class="portal-title">${portal.title}</h3>
-                    <p class="portal-description">${portal.description}</p>
-                    <a href="${portal.url}" class="portal-link" target="_blank">Visit Portal</a>
+            destinationsData.forEach(destination => {
+                const destinationCard = document.createElement('div');
+                destinationCard.className = 'destination-card';
+                destinationCard.dataset.id = destination.id;
+                destinationCard.innerHTML = `
+                    <img src="${destination.image}" class="destination-image" alt="${destination.title}">
+                    <h3 class="destination-title">${destination.title}</h3>
+                    <p class="destination-description">${destination.description}</p>
+                    <div class="destination-details">
+                        <div class="destination-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>${destination.location}</span>
+                        </div>
+                        <div class="destination-info">
+                            <i class="fas fa-magic"></i>
+                            <span>${destination.magicLevel}</span>
+                        </div>
+                    </div>
+                    <a href="${destination.url}" class="destination-link" target="_blank">Dream Journey</a>
                 `;
-                portals.appendChild(portalCard);
+                destinationCard.addEventListener('click', () => {
+                    openDestinationModal(destination);
+                });
+                destinations.appendChild(destinationCard);
             });
         }
         
+        // Modal functionality
+        const destinationModal = document.getElementById('destination-modal');
+        const closeModal = document.getElementById('close-modal');
+        const modalContent = document.getElementById('modal-content');
+        const modalImage = document.getElementById('modal-image');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalInfo = document.getElementById('modal-info');
+        const modalLink = document.getElementById('modal-link');
+        
+        function openDestinationModal(destination) {
+            modalImage.src = destination.image;
+            modalImage.alt = destination.title;
+            modalTitle.textContent = destination.title;
+            modalDescription.textContent = destination.description;
+            modalLink.href = destination.url;
+            
+            // Create info boxes
+            modalInfo.innerHTML = `
+                <div class="info-box">
+                    <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                    <p>${destination.location}</p>
+                </div>
+                <div class="info-box">
+                    <h4><i class="fas fa-calendar-alt"></i> Best Time to Visit</h4>
+                    <p>${destination.bestTime}</p>
+                </div>
+                <div class="info-box">
+                    <h4><i class="fas fa-magic"></i> Magic Level</h4>
+                    <p>${destination.magicLevel}</p>
+                </div>
+                <div class="info-box">
+                    <h4><i class="fas fa-coins"></i> Price</h4>
+                    <p>${destination.price}</p>
+                </div>
+            `;
+            
+            destinationModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        closeModal.addEventListener('click', () => {
+            destinationModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        destinationModal.addEventListener('click', (e) => {
+            if (e.target === destinationModal) {
+                destinationModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
         // ===== INITIALIZATION =====
         document.addEventListener('DOMContentLoaded', () => {
             // Load all data
             loadPlaylist();
             loadGallery();
-            loadPortals();
+            loadDestinations();
             
             // Set initial duration
             durationEl.textContent = musicData[currentSong].duration;
-        });
-        // ...existing code...
-const audioPlayer = document.getElementById('audio-player');
-
-function playSong() {
-    isPlaying = true;
-    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-    songTitleEl.textContent = musicData[currentSong].title;
-    audioPlayer.src = musicData[currentSong].file;
-    audioPlayer.play();
-    // ...update progress bar as audio plays...
-}
-
-function pauseSong() {
-    isPlaying = false;
-    playBtn.innerHTML = '<i class="fas fa-play"></i>';
-    audioPlayer.pause();
-}
-// ...existing code...
-        audioPlayer.addEventListener('timeupdate', () => {
-            const currentTime = audioPlayer.currentTime;
-            const duration = audioPlayer.duration;
-            const progress = (currentTime / duration) * 100;
-            progressBar.style.width = `${progress}%`;
-            currentTimeEl.textContent = formatTime(currentTime);
-        });
-
-        audioPlayer.addEventListener('ended', () => {
-            nextSong();
         });
     </script>
 </body>
